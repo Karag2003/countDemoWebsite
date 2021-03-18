@@ -1,4 +1,4 @@
-get_state_options
+def get_state_options():
   #First step is to create a list of all states for each county in counties if the county's state is not in listOfState sadd the county's state to list of states
   type(states)
   stats_list = lists(states)
