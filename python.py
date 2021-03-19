@@ -2,7 +2,7 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 
 @app.route("/")
 def render_main():
-    return render_template('Random.html')
+    return render_template('random.html')
   
 def get_state_options():
   #First step is to create a list of all states for each county in counties if the county's state is not in listOfState sadd the county's state to list of states
