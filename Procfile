@@ -1,2 +1,2 @@
-requirments.txt
+web: gunicorn python:app --log-file=-
 
