@@ -15,12 +15,12 @@ def render_fun_fact():
     return render_template('random.html', options=get_state_options(), funFact=fun_fact_by_state)
     
 def get_state_options():
-  listOfStates = [] #makes an empty list
-      with open('county_demographics.json') as demographics_data:
-       counties = json.load(demographics_data)
-   for county in counties:
-       if not(county["State"] in listOfStates):
-           listOfStates.append(county["State"])
+    listOfStates = [] #makes an empty list
+        with open('county_demographics.json') as demographics_data:
+        counties = json.load(demographics_data)
+    for county in counties:
+        if not(county["State"] in listOfStates):
+            listOfStates.append(county["State"])
         
    options = ""
    for state in listOfStates:
