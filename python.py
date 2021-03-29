@@ -16,7 +16,7 @@ def render_fun_fact():
     
 def get_state_options():
   listOfStates = [] #makes an empty list
-    with open('county_demographics.json') as demographics_data:
+      with open('county_demographics.json') as demographics_data:
        counties = json.load(demographics_data)
    for county in counties:
        if not(county["State"] in listOfStates):
@@ -29,7 +29,7 @@ def get_state_options():
     
 def fun_fact_by_state(state):
     with open('county_demographics.json') as demographics_data:
-       counties = json.load(demographics_data)
+        counties = json.load(demographics_data)
     first_county = "ZZZZZZZ"
     for county in counties:
         if county["County"] < first_county and county["State"] == state:
