@@ -16,8 +16,8 @@ def render_fun_fact():
     
 def get_state_options():
     listOfStates = [] #makes an empty list
-        with open('county_demographics.json') as demographics_data:
-        counties = json.load(demographics_data)
+        with open('county_demographics.json') as county_demographics_data:
+        counties = json.load(county_demographics_data)
     for county in counties:
         if not(county["State"] in listOfStates):
             listOfStates.append(county["State"])
