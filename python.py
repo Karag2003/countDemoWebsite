@@ -37,6 +37,5 @@ def fun_fact_by_state(state):
     return first_county
    
         
-       
-   if __name__=="__main__":
+if __name__=="__main__":
        app.run(debug=False, port=54321)
