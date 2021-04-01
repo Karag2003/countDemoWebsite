@@ -34,7 +34,7 @@ def fun_fact_by_state(state):
     for county in counties:
         if county["County"] < first_county and county["State"] == state:
             first_county = county["County"]
-    return first_county
+    return "In alphabetical order" + first_county + "comes up first!"
    
         
 if __name__=="__main__":
