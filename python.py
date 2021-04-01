@@ -16,7 +16,7 @@ def render_fun_fact():
     
 def get_state_options():
     listOfStates = [] #makes an empty list
-        with open('county_demographics.json') as county_demographics_data:
+    with open('county_demographics.json') as county_demographics_data:
         counties = json.load(county_demographics_data)
     for county in counties:
         if not(county["State"] in listOfStates):
@@ -25,7 +25,7 @@ def get_state_options():
    options = ""
    for state in listOfStates:
        options = options + Markup("<option value=\"" + state + "\">" + state + "</option>")
-       return options
+   return options
     
 def fun_fact_by_state(state):
     with open('county_demographics.json') as demographics_data:
