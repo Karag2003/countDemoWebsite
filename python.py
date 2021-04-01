@@ -22,10 +22,10 @@ def get_state_options():
         if not(county["State"] in listOfStates):
             listOfStates.append(county["State"])
         
-   options = ""
-   for state in listOfStates:
-       options = options + Markup("<option value=\"" + state + "\">" + state + "</option>")
-   return options
+    options = ""
+    for state in listOfStates:
+        options = options + Markup("<option value=\"" + state + "\">" + state + "</option>")
+    return options
     
 def fun_fact_by_state(state):
     with open('county_demographics.json') as demographics_data:
